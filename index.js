@@ -1,4 +1,4 @@
-let value = 100;
+let value = 0;
 let mmps = 0; // money made per second
 let e = document.getElementById("value");
 let e2 = document.getElementById("mmps");
