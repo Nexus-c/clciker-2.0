@@ -25,17 +25,14 @@
         <div>
             <h1>Money per second</h1>
             <h2 id = "mmps">0</h2>
-            <form  method="get"  action="index.php">
-                <input type="text"name="cookies">
-                <input type="submit">
-            </form>
         </div>  
     </div>
-    <button><a href="url">link text</a></button>
+    <div id="login-button">
+        <button><a href="login.php">login</a></button>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
 <?php
-    $cookies =  $_GET['cookies'];
-    
+
 ?>
