@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +9,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="post" action="login.php"></form>
+    <form method="post" action="login.php">
+        Username:<br>
+        <input type="text" name="username">
+        Password:<br>
+        <input type="password" name="password">
+    </form>
 </body>
 </html>
+<?php
+    $_SESSION['username'] = $_POST['username'];
+?>
