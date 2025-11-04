@@ -87,9 +87,34 @@ Add a license file if you want to make the project open source. If unsure, add `
 
 ---
 
-If you'd like, I can also:
-- Add a `.gitignore` (ignore credentials, vendor directories, etc.).
-- Create a `LICENSE` file.
-- Add example `.env` and instructions to load env vars in `database.php`.
+## Docker
 
-Please tell me which of those you'd like next.
+This project includes a Dockerfile, .dockerignore and a docker-compose.yml under the `docker/` folder. Quick commands to build and run.
+
+Build image from project root (uses docker/Dockerfile and project root as build context):
+```bash
+docker build -t clciker-2.0:latest -f docker/Dockerfile .
+```
+
+Run a container from the image:
+```bash
+docker run --rm -it -p 8080:80 -v "$(pwd)":/var/www/html clciker-2.0:latest
+```
+
+Start using docker-compose (recommended for development):
+```bash
+docker compose -f docker/docker-compose.yml up --build -d
+# stop
+docker compose -f docker/docker-compose.yml down
+```
+
+Open in host browser:
+```bash
+"$BROWSER" http://localhost:8080
+```
+
+Notes:
+- Dockerfile: `docker/Dockerfile` uses `php:8.2-apache` and exposes port 80.
+- Compose maps host port 8080 to container port 80 and mounts the repository into `/var/www/html`.
+- .dockerignore: `docker/.dockerignore` excludes .git, node_modules, vendor, dist and other build artifacts.
+- Adjust ports or mount options in `docker/docker-compose.yml` as required.
