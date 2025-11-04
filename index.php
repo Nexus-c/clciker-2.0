@@ -18,8 +18,8 @@
 </head>
 <body class="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-gray-200 p-8 flex flex-col items-center">
   <header class="w-full max-w-4xl">
-    <div class="flex justify-end">
-      <a href="login.php" class="inline-block bg-gradient-to-r from-pink-500 to-cyan-400 text-black font-bold py-2 px-4 rounded shadow hover:scale-105 transition">Login</a>
+    <div class="flex top-0 justify-between items-center mb-6">
+      <button><a href="login.php" class="inline-block bg-gradient-to-r from-pink-500 to-cyan-400 text-black font-bold py-2 px-4 rounded shadow hover:scale-105 transition">Login</a></button>
     </div>
   </header>
 
@@ -29,7 +29,7 @@
     <div class="flex flex-col items-center gap-6">
       <button onclick="best()" class="bg-gray-900 border-2 border-gray-700 text-gray-100 px-6 py-3 rounded-lg shadow-lg hover:scale-105 transform transition">Click me</button>
 
-      <section id="shop" class="w-full bg-gray-900/60 border border-dashed border-gray-700 rounded-xl p-6 md:p-8 shadow-inner">
+      <section id="shop" class="w-full bg-gray-900/60 border border-dashed border-gray-700 rounded-xl p-6 md:p-8 shadow-inner ">
         <h2 class="text-2xl font-bold text-pink-400 mb-4">Shop</h2>
         <div class="flex flex-wrap gap-3">
           <button onclick="buy1()" class="px-4 py-2 rounded-md bg-gradient-to-r from-pink-600 to-cyan-400 text-black font-semibold shadow">price: 100</button>
