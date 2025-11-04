@@ -16,7 +16,7 @@ session_start();
 <body class="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-gray-200 flex items-center justify-center p-6">
   <div class="w-full max-w-md bg-white/5 border border-pink-600/20 rounded-xl p-6 shadow-lg">
     <h2 class="text-2xl font-bold text-pink-300 mb-4">Sign In</h2>
-    <form method="post" action="login.php" class="space-y-4">
+    <form method="post" action="scr/login.php" class="space-y-4">
       <div>
         <label class="block text-sm text-gray-300">Username</label>
         <input name="username" type="text" class="w-full mt-1 px-3 py-2 rounded-md bg-gray-900 border border-gray-700 text-gray-100 outline-none focus:ring-2 focus:ring-cyan-400" />
