@@ -24,9 +24,9 @@ services:
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: clickerUsers
+      MYSQL_DATABASE: Users
       MYSQL_USER: clciker
-      MYSQL_PASSWORD: secret
+      MYSQL_PASSWORD: test1234
     ports:
       - "3307:3306"
     volumes:

@@ -1,9 +1,9 @@
 <?php
 	//if you already have a mysql sever fell free to change it
     $servername = "localhost"; // Or your MySQL host
-	$username = "root";
-	$password = "root";
-	$dbname = "clickerUsers";
+	$username = "clciker";
+	$password = "test1234";
+	$dbname = "Users";
 
 // Create connection
 	$conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -16,4 +16,5 @@
 // Perform database operations here...
 
 // Close connection
+	mysqli_close($conn);
 ?>
