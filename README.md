@@ -21,7 +21,6 @@ Simple PHP web project (small clicker-style app). This repository contains a min
 
 Notes:
 - The Docker setup (see docker/docker-compose.yml) can provision the services needed for local development.
-- Do not commit sensitive credentials (use environment variables or a config file excluded from version control).
 
 ---
 
