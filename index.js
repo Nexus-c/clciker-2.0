@@ -136,3 +136,11 @@ function reset() {
     e2.innerHTML = mmps;
     alert("Game reset!");
 }
+setInterval(() => {
+    fetch('save.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'clicks=' + encodeURIComponent(value)
+    });
+}, 5000); // update every 5 seconds
+
