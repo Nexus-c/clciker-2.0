@@ -16,5 +16,4 @@
 // Perform database operations here...
 
 // Close connection
-	mysqli_close($conn);
 ?>
