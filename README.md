@@ -40,20 +40,9 @@ If the project requires a database, create the database and update `database.php
 
 ## Database
 
-There is a `database.php` file included. Typical steps when using MySQL:
+1.The mysql sever is istalled with the docker image and creates the table for what you need to get up and runing
 
-1. Create a database and user:
-
-```sql
-CREATE DATABASE myapp;
-CREATE USER 'myuser'@'localhost' IDENTIFIED BY 'secure_password';
-GRANT ALL PRIVILEGES ON myapp.* TO 'myuser'@'localhost';
-FLUSH PRIVILEGES;
-```
-
-2. Edit `database.php` and place your host, database name, username and password.
-
-3. Run any schema or seed SQL required by the app (if present). If not present, inspect the code to see expected table names.
+Note: This feture is under devolment so somestuff my not work
 
 ## Security notes
 
