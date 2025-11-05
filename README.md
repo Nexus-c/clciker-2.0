@@ -11,10 +11,10 @@ Simple PHP web project (small clicker-style app). This repository contains a min
 
 ## Requirements
 
--PHP 8.x (or PHP 7.4+) installed
--A web server (Apache/Nginx) with PHP, or use PHP's built-in server for development
--(Optional) MySQL / MariaDB if database.php expects a DB connection
--(Optional) Docker
+1.PHP 8.x (or PHP 7.4+) installed.
+2.A web server (Apache/Nginx) with PHP, or use PHP's built-in server for development.
+3.(Optional) MySQL / MariaDB if database.php expects a DB connection.
+4.(Optional) Docker.
 
 -Note: Docker installs all of the requirements needed will be installed by the docker image
 ## Quick start (development)
