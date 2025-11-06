@@ -20,7 +20,7 @@ Simple PHP web project (small clicker-style app). This repository contains a min
 - (Optional) Docker — the provided Docker image can install and run PHP/Apache (and the MySQL service from docker-compose) for development.
 
 Notes:
-- The Docker setup (see docker/docker-compose.yml) can provision the services needed for local development.
+The docker doesn't not work with the mysql. If you want mysql fetures install it on your mechine and put in the information in the php vars in database.php
 
 ---
 
@@ -47,8 +47,7 @@ If the project requires a database, create the database and update `database.php
 
 ## Database
 
-1.The mysql sever is istalled with the docker image and creates the table for what you need to get up and runing
-
+1.The mysql sever is not installed by docker
 Note: This feture is under devolment so somestuff my not work
 
 ## Security notes
@@ -114,3 +113,4 @@ Notes:
 - Compose maps host port 8080 to container port 80 and mounts the repository into `/var/www/html`.
 - .dockerignore: `docker/.dockerignore` excludes .git, node_modules, vendor, dist and other build artifacts.
 - Adjust ports or mount options in `docker/docker-compose.yml` as required.
+Docker does not work with mysql right now
