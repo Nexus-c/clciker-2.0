@@ -1,3 +1,6 @@
+<?php 
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +23,7 @@
   <header class="w-full max-w-4xl">
     <div class="flex top-0 justify-between items-center mb-6">
       <button><a href="login.php" class="inline-block bg-gradient-to-r from-pink-500 to-cyan-400 text-black font-bold py-2 px-4 rounded shadow hover:scale-105 transition">Login</a></button>
+      <button><a href="signUp.php" class="inline-block bg-gradient-to-r from-pink-500 to-cyan-400 text-black font-bold py-2 px-4 rounded shadow hover:scale-105 transition">SignUp</a></button>
     </div>
   </header>
 
@@ -49,6 +53,6 @@
     </div>
   </main>
 
-  <script src="index.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
